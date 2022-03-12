@@ -1,0 +1,13 @@
+.loader {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  color: black;
+
+  &__logo {
+    position: absolute;
+    font-size: 5rem;
+    left: 40%;
+    top: 40%;
+  }
+}

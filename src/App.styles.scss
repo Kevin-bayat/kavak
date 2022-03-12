@@ -1,0 +1,31 @@
+@import "shared/styles/_variables.scss";
+@font-face {
+  font-family: "IRANSans";
+  src: url("//db.onlinewebfonts.com/t/3967f8bfcdf02e2b966e2f252738ddca.eot");
+  src: url("//db.onlinewebfonts.com/t/3967f8bfcdf02e2b966e2f252738ddca.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/3967f8bfcdf02e2b966e2f252738ddca.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/3967f8bfcdf02e2b966e2f252738ddca.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/3967f8bfcdf02e2b966e2f252738ddca.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/3967f8bfcdf02e2b966e2f252738ddca.svg#IRANSans")
+      format("svg");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Roboto", sans-serif;
+  background-color: $palette-gray-0; /* MAIN COLOR */
+  overflow-x: hidden;
+}
+.App {
+  width: 100%;
+}
