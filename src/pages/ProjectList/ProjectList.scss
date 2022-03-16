@@ -1,0 +1,75 @@
+@import "shared/styles/variables";
+
+.projectList {
+
+
+  .top {
+    text-align: center;
+    position: relative;
+    padding-top: 120px;
+
+
+    .topImage {
+      width: 85%;
+      height: 400px;
+      object-fit: cover;
+    }
+    .title {
+      text-transform: uppercase;
+      color: $palette-gray-15;
+      font-size: 3rem;
+      font-weight: 600;
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      text-align: center;
+
+    }
+  }
+  .bottom {
+   margin-top: 120px;
+    .bottomContainer {
+      margin: 10px;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      .cart{
+        width: 25%;
+        text-align: center;
+        margin:30px;
+        cursor: pointer;
+
+        &:hover{
+          transform: scale(1.1);
+          transition: all 0.6s ease-in-out;
+
+          .projectInfo{
+            color: $palette-gray-19;
+          }
+        }
+        .img{
+          object-fit: cover;
+          height: 500px;
+          width: 400px;
+          margin-bottom: 10px;
+        }
+        .projectInfo{
+          .title{
+            color: $palette-gray-13;
+            font-size: 20px;
+            font-weight: 500;
+            padding: 10px 0;
+          }
+          .desc{
+            color: $palette-gray-10;
+            font-size: 14px;
+            margin:0 10px 10px;
+          }
+        }
+
+      }
+    }
+  }
+}

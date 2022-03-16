@@ -1,12 +1,18 @@
 @import "shared/styles/variables";
 
 .our-work {
-  &__title {
-    font-size: 2rem;
+  &__title  {
+    font-size: 3rem;
     font-weight: 400;
     text-align: center;
-    margin: 20px 0;
-    color: $palette-gray-19;
+    margin: 20px auto;
+
+    cursor: pointer;
+
+    .link{
+      text-decoration: none;
+      color: $palette-gray-19;
+    }
   }
 
   .titleContainer {

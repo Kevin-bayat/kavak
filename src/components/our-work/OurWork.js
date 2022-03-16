@@ -1,9 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
-
-import "./our-work.scss";
-import {  Typography } from "@mui/material";
+import "./OurWork.scss";
 import { motion } from "framer-motion";
 import { kavakData } from "../../data/data";
+import { Link } from "react-router-dom";
 
 const OurWork = () => {
   const [width, setWidth] = useState(0);
@@ -14,14 +13,12 @@ const OurWork = () => {
   return (
     <div className="our-work__container">
       <div className="our-work">
-        <Typography
-          variant={"h2"}
-          component={"div"}
-          className="our-work__title"
-          paddingBottom={2}
-        >
-          Our Work
-        </Typography>
+        <div className="our-work__title">
+          <Link to="/projects" className="link">
+            Our Work
+          </Link>
+        </div>
+
         <motion.div
           ref={carousel}
           className={"carousel"}
@@ -35,7 +32,7 @@ const OurWork = () => {
           >
             {kavakData.map((item) => (
               <motion.div paddingRight={0} className={"image"} key={item.id}>
-                <img src={item.image} alt={item.name} />
+                {item.renderImage}
               </motion.div>
             ))}
           </motion.div>

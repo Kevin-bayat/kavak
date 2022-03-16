@@ -1,194 +1,117 @@
+import apartment from "../img/projects/apartment.jpg";
+import office from "../img/projects/office.jpg";
+import workOut from "../img/projects/work-out.jpg";
+import commercial from "../img/projects/commercial.jpg";
+import villa from "../img/projects/villa.jpg";
+
 export const kavakData = [
   {
     id: 1,
-    name: "Edari",
-    image:
-      "https://tcproduction.blob.core.windows.net/media/%7B240f8b72-1159-4fd3-a150-0a837f50ba4a%7D.2573758641_297d6d19fa_o.jpg",
-    tours: [
+    title: "Apartment",
+    desc: "Students will be required to submit a reflective report on their literature search with an annotated bibliography to demonstrate their assessment of the quality of the resources they have found",
+    renderImage: <img className="img" src={apartment} alt={""} />,
+    link: "/projects/apartment",
+    projectList: [
       {
-        id: 1,
-        name: "Immerse into the Falls",
-        duration: 5,
-        rating: 4.5,
-        numberOfReviews: 462,
-        price: 465,
-        image:
-          "https://tcproduction.blob.core.windows.net/media/%7B240f8b72-1159-4fd3-a150-0a837f50ba4a%7D.2573758641_297d6d19fa_o.jpg",
+        id: 11,
+        title: "Apartment",
+        desc: "Students will be required to submit a reflective report on their literature search with an annotated bibliography to demonstrate their assessment of the quality of the resources they have found",
+        renderImage: <img className="img" src={apartment} alt={""} />,
+        link: "/projects/apartment",
       },
       {
-        id: 2,
-        name: "Helicopter Over the Falls",
-        duration: 8,
-        rating: 3.5,
-        numberOfReviews: 641,
-        price: 385,
-        image:
-          "https://d2ru2mvuh5wx24.cloudfront.net/avtivity_bootstrap/1241/flight_of_angels_3__1920x864.jpg",
+        id: 12,
+        title: "Apartment",
+        desc: "Students will be required to submit a reflective report on their literature search with an annotated bibliography to demonstrate their assessment of the quality of the resources they have found",
+        renderImage: <img className="img" src={apartment} alt={""} />,
+        link: "/projects/apartment",
       },
       {
-        id: 3,
-        name: "The Falls at Night",
-        duration: 2,
-        rating: 4.5,
-        numberOfReviews: 133,
-        price: 144,
-        image:
-          "https://www.niagarafallsstatepark.com/~/media/parks/niagara-falls/attractions-and-tours/illumination/niagarafalls-illumination-header-desktop.jpg?h=500&w=1500&la=en&hash=123E6D5F1744FBCC74EC36570E77872608D24891g",
+        id: 13,
+        title: "Apartment",
+        desc: "Students will be required to submit a reflective report on their literature search with an annotated bibliography to demonstrate their assessment of the quality of the resources they have found",
+        renderImage: <img className="img" src={apartment} alt={""} />,
+        link: "/projects/apartment",
       },
       {
-        id: 4,
-        name: "Immerse into the Falls",
-        duration: 5,
-        rating: 4.5,
-        numberOfReviews: 462,
-        price: 465,
-        image:
-          "https://tcproduction.blob.core.windows.net/media/%7B240f8b72-1159-4fd3-a150-0a837f50ba4a%7D.2573758641_297d6d19fa_o.jpg",
+        id: 14,
+        title: "Apartment",
+        desc: "Students will be required to submit a reflective report on their literature search with an annotated bibliography to demonstrate their assessment of the quality of the resources they have found",
+        renderImage: <img className="img" src={apartment} alt={""} />,
+        link: "/projects/apartment",
+      },
+      {
+        id: 15,
+        title: "Apartment",
+        desc: "Students will be required to submit a reflective report on their literature search with an annotated bibliography to demonstrate their assessment of the quality of the resources they have found",
+        renderImage: <img className="img" src={apartment} alt={""} />,
+        link: "/projects/apartment",
       },
     ],
   },
   {
     id: 2,
-    name: "Maskooni",
-    image:
-      "https://tcproduction.blob.core.windows.net/media/%7B240f8b72-1159-4fd3-a150-0a837f50ba4a%7D.2573758641_297d6d19fa_o.jpg",
-    tours: [
+    title: "Office",
+    desc: "Students will be required to submit a reflective report on their literature search with an annotated bibliography to demonstrate their assessment of the quality of the resources they have found",
+    renderImage: <img className="img" src={office} alt={""} />,
+    link: "/projects/office",
+    projectList: [
       {
-        id: 5,
-        name: "All Around the World",
-        duration: 5,
-        rating: 4.5,
-        numberOfReviews: 462,
-        price: 465,
-        image:
-          "https://assets.simpleviewcms.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/lasvegas/strip_b86ddbea-3add-4995-b449-ac85d700b027.jpg",
+        id: 22,
+        title: "Office",
+        desc: "Students will be required to submit a reflective report on their literature search with an annotated bibliography to demonstrate their assessment of the quality of the resources they have found",
+        renderImage: <img className="img" src={office} alt={""} />,
+        link: "/projects/apartment",
       },
       {
-        id: 6,
-        name: "View the Casinos",
-        duration: 5,
-        rating: 4.5,
-        numberOfReviews: 462,
-        price: 465,
-        image:
-          "https://s3.amazonaws.com/virginhotelslv.com/content/uploads/2021/04/Website-Hero-Images-Mohegan-Sun-B-1300x420-1.jpg",
+        id: 23,
+        title: "Office",
+        desc: "Students will be required to submit a reflective report on their literature search with an annotated bibliography to demonstrate their assessment of the quality of the resources they have found",
+        renderImage: <img className="img" src={office} alt={""} />,
+        link: "/projects/apartment",
       },
       {
-        id: 7,
-        name: "Show me the Magic",
-        duration: 8,
-        rating: 3.5,
-        numberOfReviews: 641,
-        price: 385,
-        image:
-          "https://footwearnews.com/wp-content/uploads/2020/10/magic-trade-show-las-vegas.jpg",
+        id: 24,
+        title: "Office",
+        desc: "Students will be required to submit a reflective report on their literature search with an annotated bibliography to demonstrate their assessment of the quality of the resources they have found",
+        renderImage: <img className="img" src={office} alt={""} />,
+        link: "/projects/apartment",
       },
       {
-        id: 8,
-        name: "The Falls at Night",
-        duration: 2,
-        rating: 4.5,
-        numberOfReviews: 133,
-        price: 144,
-        image:
-          "https://assets.simpleviewcms.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/lasvegas/strip_b86ddbea-3add-4995-b449-ac85d700b027.jpg",
+        id: 25,
+        title: "Office",
+        desc: "Students will be required to submit a reflective report on their literature search with an annotated bibliography to demonstrate their assessment of the quality of the resources they have found",
+        renderImage: <img className="img" src={office} alt={""} />,
+        link: "/projects/apartment",
+      },
+      {
+        id: 26,
+        title: "Office",
+        desc: "Students will be required to submit a reflective report on their literature search with an annotated bibliography to demonstrate their assessment of the quality of the resources they have found",
+        renderImage: <img className="img" src={office} alt={""} />,
+        link: "/projects/apartment",
       },
     ],
   },
   {
     id: 3,
-    name: "Kanaf",
-    image:
-      "https://tcproduction.blob.core.windows.net/media/%7B240f8b72-1159-4fd3-a150-0a837f50ba4a%7D.2573758641_297d6d19fa_o.jpg",
-    tours: [
-      {
-        id: 9,
-        name: "All Around the World",
-        duration: 5,
-        rating: 4.5,
-        numberOfReviews: 462,
-        price: 465,
-        image:
-          "https://assets.simpleviewcms.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/lasvegas/strip_b86ddbea-3add-4995-b449-ac85d700b027.jpg",
-      },
-      {
-        id: 10,
-        name: "View the Casinos",
-        duration: 5,
-        rating: 4.5,
-        numberOfReviews: 462,
-        price: 465,
-        image:
-          "https://s3.amazonaws.com/virginhotelslv.com/content/uploads/2021/04/Website-Hero-Images-Mohegan-Sun-B-1300x420-1.jpg",
-      },
-      {
-        id: 11,
-        name: "Show me the Magic",
-        duration: 8,
-        rating: 3.5,
-        numberOfReviews: 641,
-        price: 385,
-        image:
-          "https://footwearnews.com/wp-content/uploads/2020/10/magic-trade-show-las-vegas.jpg",
-      },
-      {
-        id: 12,
-        name: "The Falls at Night",
-        duration: 2,
-        rating: 4.5,
-        numberOfReviews: 133,
-        price: 144,
-        image:
-          "https://assets.simpleviewcms.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/lasvegas/strip_b86ddbea-3add-4995-b449-ac85d700b027.jpg",
-      },
-    ],
+    title: "WorkOut",
+    desc: "Students will be required to submit a reflective report on their literature search with an annotated bibliography to demonstrate their assessment of the quality of the resources they have found",
+    renderImage: <img className="img" src={workOut} alt={""} />,
+    link: "/projects/workOut",
   },
   {
     id: 4,
-    name: "Tejari",
-    image:
-      "https://tcproduction.blob.core.windows.net/media/%7B240f8b72-1159-4fd3-a150-0a837f50ba4a%7D.2573758641_297d6d19fa_o.jpg",
-    tours: [
-      {
-        id: 13,
-        name: "All Around the World",
-        duration: 5,
-        rating: 4.5,
-        numberOfReviews: 462,
-        price: 465,
-        image:
-          "https://assets.simpleviewcms.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/lasvegas/strip_b86ddbea-3add-4995-b449-ac85d700b027.jpg",
-      },
-      {
-        id: 14,
-        name: "View the Casinos",
-        duration: 5,
-        rating: 4.5,
-        numberOfReviews: 462,
-        price: 465,
-        image:
-          "https://s3.amazonaws.com/virginhotelslv.com/content/uploads/2021/04/Website-Hero-Images-Mohegan-Sun-B-1300x420-1.jpg",
-      },
-      {
-        id: 15,
-        name: "Show me the Magic",
-        duration: 8,
-        rating: 3.5,
-        numberOfReviews: 641,
-        price: 385,
-        image:
-          "https://footwearnews.com/wp-content/uploads/2020/10/magic-trade-show-las-vegas.jpg",
-      },
-      {
-        id: 16,
-        name: "The Falls at Night",
-        duration: 2,
-        rating: 4.5,
-        numberOfReviews: 133,
-        price: 144,
-        image:
-          "https://assets.simpleviewcms.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/lasvegas/strip_b86ddbea-3add-4995-b449-ac85d700b027.jpg",
-      },
-    ],
+    title: "Commercial",
+    desc: "Students will be required to submit a reflective report on their literature search with an annotated bibliography to demonstrate their assessment of the quality of the resources they have found",
+    renderImage: <img className="img" src={commercial} alt={""} />,
+    link: "/projects/commercial",
+  },
+  {
+    id: 5,
+    title: "Villa",
+    desc: "Students will be required to submit a reflective report on their literature search with an annotated bibliography to demonstrate their assessment of the quality of the resources they have found",
+    renderImage: <img className="img" src={villa} alt={""} />,
+    link: "/projects/villa",
   },
 ];

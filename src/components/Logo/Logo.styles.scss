@@ -1,18 +1,25 @@
 @import "shared/styles/variables";
 .logo {
-  font-family: "Bebas Neue", "Roboto", sans-serif;
   display: flex;
   position: absolute;
-  margin: 15px;
+  margin: 20px;
   z-index: 4;
+  cursor: pointer;
+
+  .img{
+    width: 150px;
+    height: 50px;
+    background-color: transparent;
+    position: absolute;
+  }
 
   &--title {
     letter-spacing: 5px;
     font-size: 3rem;
-    cursor: pointer;
+    font-weight: bold;
   }
   p {
     font-size: 1.2rem;
-    line-height: 80px;
+    line-height: 92px;
   }
 }

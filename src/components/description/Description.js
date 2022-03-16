@@ -1,9 +1,9 @@
 import React from "react";
 import "./Description.scss";
 
-import Image1 from "../../img/Woolacombe-Bay-Architecture-by-INKSPACE-Feature-2.jpg";
+import Image1 from "../../img/projects/villa.jpg";
 import Image2 from "../../img/sliderImage/Coach-House-Architecture-by-INKSPACE-11-of-1.jpg";
-import {  Grid } from "@mui/material";
+import { Grid } from "@mui/material";
 
 const Description = () => {
   return (

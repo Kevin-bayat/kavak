@@ -4,6 +4,7 @@ import "../Logo/Logo.styles.scss";
 import Logo from "../Logo/Logo";
 import BurgerMenu from "../BurgerMenu/BurgerMenu";
 import { animated, useTransition } from "react-spring";
+import { Link } from "react-router-dom";
 // import Cursor from "../Cursor/Cursor";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,9 +38,11 @@ const Navbar = () => {
   window.addEventListener("scroll", handleScroll);
 
   return (
-    <>
+    <div className="navbarContainer">
       <div>
-        <Logo isOpen={isOpen} />
+        <Link to="/">
+          <Logo isOpen={isOpen} />
+        </Link>
       </div>
       {transition(
         (style, item) =>
@@ -49,20 +52,25 @@ const Navbar = () => {
               <div>
                 <ul className="nav">
                   <li className="nav-items">
-                    <a className={` nav-item`}>projects</a>
+                    <Link to="/projects" className={` nav-item`}>
+                      projects
+                    </Link>
                   </li>
                   <li className="nav-items">
-                    <a className={` nav-item`}>information</a>
-                  </li>
-                  <li className="nav-items">
-                    <a className={` nav-item`}>news</a>
+                    <Link to="/news" className={` nav-item`}>
+                      news
+                    </Link>
                   </li>
 
                   <li className="nav-items">
-                    <a className={` nav-item`}>about us</a>
+                    <Link to="/about-us" className={` nav-item`}>
+                      about us
+                    </Link>
                   </li>
                   <li className="nav-items">
-                    <a className={` nav-item`}>contacts</a>
+                    <Link to="/contact-us" className={` nav-item`}>
+                      contacts
+                    </Link>
                   </li>
 
                   {/*<Cursor className={"cursor"} />*/}
@@ -75,7 +83,7 @@ const Navbar = () => {
       <div onClick={navbarClickHandler}>
         <BurgerMenu isOpen={isOpen} pageOffset={pageOffset} />
       </div>
-    </>
+    </div>
   );
 };
 export default Navbar;

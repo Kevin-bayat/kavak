@@ -6,11 +6,14 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
+import FaxIcon from "@mui/icons-material/Fax";
+import logoWhite from "../../img/logo/logo_KAVAK_WHITE.png";
 const Footer = () => {
   return (
     <Grid container className="footer">
       <div className="left">
-        <div className="logo">KAVAK</div>
+        {/*<div className="logo">KAVAK</div>*/}
+        <img className="logo" src={logoWhite} alt={"kavak"} />
       </div>
       <div className="right">
         <div className="kavak-info">
@@ -29,6 +32,14 @@ const Footer = () => {
             <div className="phone">
               <p>(+98) 21 2229 2616</p>
               <p>(+98) 21 2282 2007 - 8</p>
+            </div>
+          </div>
+          <div className="icon">
+            <span>
+              <FaxIcon fontSize="small" />
+            </span>
+            <div className="fax">
+              <p>(+98) 21 2229 2616</p>
             </div>
           </div>
         </div>
