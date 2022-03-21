@@ -17,17 +17,22 @@
 
 .app_subHeading-title h4{
   font-size: 14px;
-  color: $color-gray;
+  color: var(--color-grey);
   font-weight: 400;
 
 }
 
 .app_subHeading-description{
-  width: 30%;
-  color: $color-white;
+  width: 100%;
+  color: var(--color-white);
   flex-wrap: wrap;
-  font-weight: 600;
-  font-family: $font-title;
-  letter-spacing: 0.09em;
-  font-size:26px;
+
+
+
+  h1{
+    font-size:36px;
+    font-weight: bold;
+    font-family: var(--font-base);
+    letter-spacing: 0.09em;
+  }
 }

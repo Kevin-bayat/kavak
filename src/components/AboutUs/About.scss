@@ -1,0 +1,33 @@
+.app_aboutUs{
+  background-color: var(--color-white);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.app_aboutUs-content {
+  flex:1;
+  width: 100%;
+  p:first-of-type{
+    padding: 2rem 0;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  p:last-of-type{
+    color: var(--color-gray);
+    font-size: 13px;
+  }
+  button{
+    margin: 2rem 0;
+  }
+
+}
+.app_aboutUs-image{
+  flex:1;
+  width: 100%;
+  padding:1rem 2rem 0 0;
+}
+.app_aboutUs-image img{
+object-fit: cover;
+  width: 530px;
+  height: 400px;
+}

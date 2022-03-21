@@ -147,9 +147,9 @@ export const serviceCart = [
 ];
 export const projectsImage = [
   {
-    tittle: "ARCH BUILDING",
+    tittle: "MOLANA BUILDING",
     image: images.molana,
   },
-  { tittle: "ARCH BUILDING", image: images.atar },
-  { tittle: "ARCH BUILDING", image: images.hafez },
+  { tittle: "ATAR BUILDING", image: images.atar },
+  { tittle: "HAFEZ BUILDING", image: images.hafez },
 ];

@@ -8,17 +8,19 @@ import Services from "../../components/Services/Services";
 
 import "../../App.css";
 import OurProjects from "../../components/OurProjects/OurProjects";
+import About from "../../components/AboutUs/About";
 
 const Home = () => {
   return (
     <div>
       <Navbar />
       <Slider />
+      <About />
       <Services />
       <OurProjects />
       {/*<Description />*/}
       {/*<OurWork />*/}
-      {/*<Footer />*/}
+      <Footer />
     </div>
   );
 };

@@ -10,7 +10,7 @@ import FaxIcon from "@mui/icons-material/Fax";
 import logoWhite from "../../img/logo/logo_KAVAK_WHITE.png";
 const Footer = () => {
   return (
-    <Grid container className="footer">
+    <Grid container className="footer" id="contacts">
       <div className="left">
         {/*<div className="logo">KAVAK</div>*/}
         <img className="logo" src={logoWhite} alt={"kavak"} />

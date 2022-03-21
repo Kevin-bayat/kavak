@@ -4,7 +4,7 @@ import AddIcon from "@mui/icons-material/Add";
 import { Link } from "react-router-dom";
 const OurProjects = () => {
   return (
-    <div className="app__ourProjects">
+    <div className="app__ourProjects" id="projects">
       <Link to={"/projects"}>
         <div className="app__ourProjects-images">
           {projectsImage.map((image, index) => (

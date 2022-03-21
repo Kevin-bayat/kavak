@@ -35,6 +35,7 @@
 
 .projects_image img{
   height: 100vh;
+  object-fit: cover;
 }
 
 .projects_image:hover {
@@ -44,5 +45,6 @@
 
 img{
   filter: brightness(50%);
+  object-fit: cover;
 }
 }
