@@ -1,6 +1,5 @@
 import React from "react";
 import "./Footer.scss";
-import { Grid } from "@mui/material";
 import PhoneIcon from "@mui/icons-material/Phone";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -10,10 +9,12 @@ import FaxIcon from "@mui/icons-material/Fax";
 import logoWhite from "../../img/logo/logo_KAVAK_WHITE.png";
 const Footer = () => {
   return (
-    <Grid container className="footer" id="contacts">
+    <div className="footer section__padding" id="contacts">
       <div className="left">
-        {/*<div className="logo">KAVAK</div>*/}
         <img className="logo" src={logoWhite} alt={"kavak"} />
+      </div>
+      <div className="center p__openSans">
+        <a href="#top">GO TO TOP</a>
       </div>
       <div className="right">
         <div className="kavak-info">
@@ -67,7 +68,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </Grid>
+    </div>
   );
 };
 export default Footer;

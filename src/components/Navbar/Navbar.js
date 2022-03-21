@@ -93,7 +93,7 @@ const Navbar = () => {
     //     <BurgerMenu isOpen={isOpen} pageOffset={pageOffset} />
     //   </div>
     // </div>
-    <nav className="app__navbar section__padding">
+    <nav className="app__navbar section__padding" id="top">
       <div className="app__navbar-logo">
         <Link to="/">
           <img src={images.logo} alt="app logo" />
