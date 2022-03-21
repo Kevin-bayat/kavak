@@ -17,7 +17,7 @@ const Navbar = () => {
   });
 
   const navbarClickHandler = () => {
-    setIsOpen(!isOpen);
+    setIsOpen((prevState) => !prevState);
   };
 
   const handleScroll = () => {
@@ -61,6 +61,11 @@ const Navbar = () => {
                       news
                     </Link>
                   </li>
+                  <li className="nav-items">
+                    {/*<Link to="/service" className={` nav-item`}>*/}
+                    <a href="#service"> service</a>
+                    {/*</Link>*/}
+                  </li>
 
                   <li className="nav-items">
                     <Link to="/about-us" className={` nav-item`}>
@@ -72,8 +77,6 @@ const Navbar = () => {
                       contacts
                     </Link>
                   </li>
-
-                  {/*<Cursor className={"cursor"} />*/}
                 </ul>
               </div>
               <div />

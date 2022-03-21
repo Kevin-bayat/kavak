@@ -1,0 +1,29 @@
+
+.app__services {
+  background-color: var(--color-black);
+}
+.app__services-steps {
+  width: 100%;
+  padding-top: 2rem;
+}
+.app__services-steps_cart {
+  padding: 2rem 1rem 2rem 2rem;
+  margin-right: 2rem;
+  border: 1px solid var(--color-gray);
+}
+.step_icons {
+  color: var(--color-white);
+  padding-bottom: 1rem;
+}
+.step_title {
+  text-transform: uppercase;
+  color: var(--color-white);
+  font-weight: 400;
+  padding-bottom: 0.5em;
+  font-size: 14px;
+}
+.step_description {
+  color: var(--color-grey);
+  font-size: 13px;
+  font-weight: 600;
+}

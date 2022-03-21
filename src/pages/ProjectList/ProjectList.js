@@ -1,6 +1,6 @@
 import "./ProjectList.scss";
 import Navbar from "../../components/Navbar/Navbar";
-import { kavakData } from "../../data/data";
+import { kavakData } from "../../constants/data";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
 import container from "../../img/projects/villa.jpg";
@@ -21,7 +21,7 @@ const ProjectList = () => {
               item?.projectList?.map(
                 (list) =>
                   item.title === list.title && (
-                    <div className="cart">
+                    <div className="cart" key={item.id}>
                       <Link to={list.link}>
                         {list.renderImage}
                         <div className="projectInfo">

@@ -5,24 +5,20 @@ import { sliderData } from "../../data/SliderData/sliderData";
 import { ArrowLeft, ArrowRight } from "@mui/icons-material";
 import styled from "styled-components";
 
-
 const Wrapper = styled.div`
   display: flex;
   height: 100vh;
   transform: translateX(${(props) => props.slideIndex * -100}vw);
 `;
 
-
 const Slider = () => {
   const [slideIndex, setSlideIndex] = useState(0);
 
   const sliderHandler = (direction) => {
-
     if (direction === "left") {
       setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2);
     } else setSlideIndex(slideIndex < 2 ? slideIndex + 1 : 0);
   };
-  console.log(sliderData.map(item=>item));
 
   return (
     <section className="slider">

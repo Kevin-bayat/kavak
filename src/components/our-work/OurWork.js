@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./OurWork.scss";
 import { motion } from "framer-motion";
-import { kavakData } from "../../data/data";
+import { kavakData } from "../../constants/data";
 import { Link } from "react-router-dom";
 
 const OurWork = () => {

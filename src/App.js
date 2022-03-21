@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
-import "./App.styles.scss";
+import "./App.css";
 import Loader from "./components/Loader/Loader";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import ProjectList from "./pages/ProjectList/ProjectList";
 import Projects from "./pages/Projects/Projects";
+import Service from "./pages/Service/Service";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -19,7 +20,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="app">
       {loading ? (
         <Loader />
       ) : (
@@ -35,6 +36,9 @@ function App() {
               </Route>
               <Route path="about-us">
                 <Route index element={<AboutUs />} />
+              </Route>
+              <Route path="service">
+                <Route index element={<Service />} />
               </Route>
             </Route>
           </Routes>

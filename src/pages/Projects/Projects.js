@@ -1,7 +1,7 @@
 import "./Projects.scss";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
-import { kavakData } from "../../data/data";
+import { kavakData } from "../../constants/data";
 import { Grid } from "@mui/material";
 import { Link } from "react-router-dom";
 
@@ -33,7 +33,7 @@ const Projects = () => {
         <div className="bottom">
           <div className="bottomContainer">
             {kavakData?.map((item) => (
-              <div className="cart">
+              <div className="cart" key={item.id}>
                 <Link to={item.link}>
                   {item.renderImage}
                   <div className="projectInfo">

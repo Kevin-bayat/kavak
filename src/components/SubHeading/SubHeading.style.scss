@@ -1,0 +1,33 @@
+@import "shared/styles/variables";
+.app_subHeading{
+  width: 100%;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.app_subHeading-title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.app_subHeading-title h4{
+  font-size: 14px;
+  color: $color-gray;
+  font-weight: 400;
+
+}
+
+.app_subHeading-description{
+  width: 30%;
+  color: $color-white;
+  flex-wrap: wrap;
+  font-weight: 600;
+  font-family: $font-title;
+  letter-spacing: 0.09em;
+  font-size:26px;
+}

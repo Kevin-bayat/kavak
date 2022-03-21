@@ -3,6 +3,13 @@ import office from "../img/projects/office.jpg";
 import workOut from "../img/projects/work-out.jpg";
 import commercial from "../img/projects/commercial.jpg";
 import villa from "../img/projects/villa.jpg";
+import {
+  AnchorOutlined,
+  DiamondOutlined,
+  FormatColorFill,
+  HeadsetMicOutlined,
+} from "@mui/icons-material";
+import images from "./images";
 
 export const kavakData = [
   {
@@ -114,4 +121,35 @@ export const kavakData = [
     renderImage: <img className="img" src={villa} alt={""} />,
     link: "/projects/villa",
   },
+];
+
+export const serviceCart = [
+  {
+    icon: <DiamondOutlined fontSize={"large"} />,
+    title: "ARCHITECTURE",
+    description: "Architecture has to do with planning and designing form",
+  },
+  {
+    icon: <FormatColorFill fontSize={"large"} />,
+    title: "INTERIOR DESIGN",
+    description: "Architecture has to do with planning and designing form",
+  },
+  {
+    icon: <AnchorOutlined fontSize={"large"} />,
+    title: "FURNITURE DESIGN",
+    description: "Architecture has to do with planning and designing form",
+  },
+  {
+    icon: <HeadsetMicOutlined fontSize={"large"} />,
+    title: "CONSULTING",
+    description: "Architecture has to do with planning and designing form",
+  },
+];
+export const projectsImage = [
+  {
+    tittle: "ARCH BUILDING",
+    image: images.molana,
+  },
+  { tittle: "ARCH BUILDING", image: images.atar },
+  { tittle: "ARCH BUILDING", image: images.hafez },
 ];
