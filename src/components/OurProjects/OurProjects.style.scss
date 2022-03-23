@@ -31,6 +31,7 @@
     font-size: 1.6rem;
     letter-spacing: 0.07em;
   }
+
 }
 
 .projects_image img{
@@ -41,6 +42,8 @@
 .projects_image:hover {
   .projects_image-icon{
     opacity: 1;
+    filter: brightness(60%) ;
+
   }
 
 img{

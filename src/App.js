@@ -7,9 +7,10 @@ import AboutUs from "./pages/AboutUs/AboutUs";
 import ProjectList from "./pages/ProjectList/ProjectList";
 import Projects from "./pages/Projects/Projects";
 import Service from "./pages/Service/Service";
+import ContactUs from "./pages/ContactUs/ContactUs";
 
 function App() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -39,6 +40,9 @@ function App() {
               </Route>
               <Route path="service">
                 <Route index element={<Service />} />
+              </Route>
+              <Route path="/contact-us">
+                <Route index element={<ContactUs />} />
               </Route>
             </Route>
           </Routes>

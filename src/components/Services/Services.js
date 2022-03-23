@@ -3,6 +3,7 @@ import SubHeading from "../SubHeading/SubHeading";
 
 import { serviceCart } from "../../constants/data";
 import { Link } from "react-router-dom";
+import Button from "../Button/Button";
 const Services = () => {
   return (
     <div className="app__services section__padding" id="service">
@@ -23,7 +24,7 @@ const Services = () => {
         ))}
       </div>
       <Link to="/service">
-        <button className="custom__button">View More</button>
+        <Button className="custom__button">View More</Button>
       </Link>
     </div>
   );

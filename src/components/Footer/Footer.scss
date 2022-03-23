@@ -1,83 +1,36 @@
 @import "shared/styles/variables";
 
 .footer {
-  object-fit: cover;
+  background-color: var(--color-black);
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   overflow: hidden;
-  color:#fff;
+  color: #fff;
 
-
-  .left {
-    flex: 1;
-    text-align: center;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-
-    .logo {
-      height: 100px;
-    }
-  }
-  .center{
-    flex: 1;
+  .footer__contact {
+    background-color: rgba(32, 32, 32, 0.47);
+    color: var(--color-white);
+    flex-direction: column;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .right {
-    flex: 1;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    width: 100%;
-    flex-direction: column;
+    padding-top: 3rem;
 
-    .kavak-info {
-      line-height: 1.4;
-      color: $palette-gray-14;
-
-
-      .icon {
-        display: flex;
-        padding-bottom: 0.7em;
-
-        & > span {
-          padding-right:  5px;
-        }
-
-        .phone {
-          display: flex;
-          flex-direction: column;
-        }
-      }
+    & h1 {
+      font-size: 2rem;
+      letter-spacing: 0.08em;
+      padding: 2rem 0;
     }
-    .social {
-      right: 10px;
-      display: flex;
-      padding-top: 10px;
-
-      &__icon {
-        cursor: pointer;
-        padding: 0 5px;
-
-        > a {
-          color: white;
-
-          .instagram:hover {
-            color: #d63085;
-          }
-          .linkedin:hover {
-            color: #0a66c2;
-          }
-          .email:hover {
-            color: #ea4335;
-          }
-        }
-      }
+    & p {
+      width: 70%;
+      text-align: center;
+      line-height: 2.4;
+      font-size: 20px;
+      color: var(--color-grey);
     }
   }
 }

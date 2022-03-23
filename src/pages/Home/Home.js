@@ -13,7 +13,7 @@ import About from "../../components/AboutUs/About";
 const Home = () => {
   return (
     <div>
-      <Navbar />
+      <Navbar isHomePage />
       <Slider />
       <About />
       <Services />

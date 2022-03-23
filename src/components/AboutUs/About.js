@@ -2,6 +2,7 @@ import "./About.scss";
 import images from "../../constants/images";
 import SubHeading from "../SubHeading/SubHeading";
 import { Link } from "react-router-dom";
+import Button from "../Button/Button";
 
 const About = () => {
   return (
@@ -26,7 +27,7 @@ const About = () => {
           ratione. Sed exercitationem molestias aut explicabo alias eum
         </p>
         <Link to="/about-us">
-          <button className="custom__button">Read More</button>
+          <Button className="custom__button">Read More</Button>
         </Link>
       </div>
     </div>

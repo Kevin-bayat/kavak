@@ -2,6 +2,7 @@ import React from "react";
 import "./Loader.scss";
 import Box from "@mui/material/Box";
 import LinearProgress from "@mui/material/LinearProgress";
+import images from "../../constants/images";
 
 const Loader = () => {
   const [progress, setProgress] = React.useState(0);
@@ -23,10 +24,12 @@ const Loader = () => {
   }, []);
   return (
     <div className="loader">
-      <Box sx={{ width: "100%" }}>
+      <Box className="loader__slider" sx={{ width: "100%" }}>
         <LinearProgress variant="determinate" value={progress} />
       </Box>
-      <div className="loader__logo">KAVAK</div>
+      <div className="loader__logo">
+        <img src={images.logoBlack} alt="kavak logo" />
+      </div>
     </div>
   );
 };

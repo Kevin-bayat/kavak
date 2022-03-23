@@ -5,6 +5,7 @@ import atar from "../img/image-4.jpg";
 import sketch from "../img/sketch-home.jpg";
 import villa from "../img/IMG_4357.jpg";
 import logo from "../img/logo/logo_KAVAK_WHITE.png";
+import logoBlack from "../img/logo/logo_KAVAK_black.png";
 import person1 from "../img/persons/person1.jpg";
 import person2 from "../img/persons/person2.jpg";
 import person3 from "../img/persons/person3.jpg";
@@ -20,6 +21,7 @@ export default {
   atar,
   sketch,
   logo,
+  logoBlack,
   villa,
   person1,
   person2,

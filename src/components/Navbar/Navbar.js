@@ -9,9 +9,9 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
 import images from "../../constants/images";
 // import Cursor from "../Cursor/Cursor";
-const Navbar = () => {
+const Navbar = ({ isHomePage }) => {
+  console.log({ isHomePage });
   const [isOpen, setIsOpen] = useState(false);
-
   const [pageOffset, setPageOffset] = useState(0);
   const transition = useTransition(isOpen, {
     from: { opacity: 0 },
@@ -93,12 +93,14 @@ const Navbar = () => {
     //     <BurgerMenu isOpen={isOpen} pageOffset={pageOffset} />
     //   </div>
     // </div>
-    <nav className="app__navbar section__padding" id="top">
-      <div className="app__navbar-logo">
-        <Link to="/">
-          <img src={images.logo} alt="app logo" />
-        </Link>
-      </div>
+    <div
+      className="app__navbar "
+      id="top"
+      style={{ backgroundColor: isHomePage ? "transparent" : "#0c0c0c" }}
+    >
+      <Link to="/" className="app__navbar-logo">
+        <img src={images.logo} alt="app logo" />
+      </Link>
 
       <ul className="app__navbar-links">
         <li className="p__openSans">
@@ -151,7 +153,7 @@ const Navbar = () => {
           </div>
         )}
       </div>
-    </nav>
+    </div>
   );
 };
 export default Navbar;
