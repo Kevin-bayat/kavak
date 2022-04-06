@@ -9,7 +9,7 @@ const OurProjects = () => {
         <div className="app__ourProjects-images">
           {projectsImage.map((image, index) => (
             <div className="projects_image " key={index}>
-              <img src={image.image} alt={image.tittle} />
+              <img src={image.image} alt={image.tittle} loading="lazy" />
               <AddIcon fontSize="large" className="projects_image-icon " />
               <h2 className="p__openSans">{image.tittle}</h2>
             </div>

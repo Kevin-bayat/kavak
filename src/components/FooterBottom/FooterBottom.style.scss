@@ -60,12 +60,11 @@
     .social {
       display: flex;
       &__icon {
-        cursor: pointer;
         padding: 0 10px;
-
 
         > a {
           color: white;
+          cursor: pointer;
 
           .instagram:hover {
             color: #d63085;
@@ -79,8 +78,5 @@
         }
       }
     }
-
-}}
-
-
-
+  }
+}

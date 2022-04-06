@@ -28,7 +28,7 @@ const Team = () => {
         <div className="app__gallery-slider-wrapper" ref={scrollRef}>
           {ourTeamImages.map((image, index) => (
             <div key={index} className="app__team-slider_images">
-              <img src={image.image} alt="personal image" />
+              <img src={image.image} alt="personal image" loading="lazy" />
               <h1 className="image-title p__cormorant">{image.title}</h1>
               <p className="image-position p__openSans">{image.job}</p>
             </div>

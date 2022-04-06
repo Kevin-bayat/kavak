@@ -1,16 +1,20 @@
 import "./ContactUs.style.scss";
 import { Paper } from "@mui/material";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
-import PhoneIcon from "@mui/icons-material/Phone";
-import FaxIcon from "@mui/icons-material/Fax";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import EmailIcon from "@mui/icons-material/Email";
 import FooterBottom from "../../components/FooterBottom/FooterBottom";
+import CircularProgressForLoading from "../../components/UI/CircularProgress/CircularProgressForLoading";
 
 const ContactUs = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <>
       <div className="app_contactUs">
@@ -24,11 +28,17 @@ const ContactUs = () => {
                   width="100%"
                   height="500"
                   frameBorder="0"
-                  style={{ filter: "grayscale(100%)" }}
+                  style={{
+                    filter: `grayscale(100%) ${loading ? "blur(8px)" : ""}`,
+                  }}
                 />
+                <div className="circular">
+                  <CircularProgressForLoading loading={loading} />
+                </div>
               </div>
             </Paper>
           </div>
+
           <div className="app_contactUs-info section__padding">
             <h1 className="app_contactUs-info_title p__cormorant">
               contact info
@@ -41,7 +51,8 @@ const ContactUs = () => {
               <div>
                 <span>Address:</span>
                 <p className="p__openSans">
-                  Tehran - Nobonyad Sq. - sixth kuhestan Avenue - no.13 - unit 7
+                  Tehran - Nobonyad Sq. - sixth kuhestan Avenue - no. 13 - unit
+                  7
                 </p>
               </div>
               <div>
