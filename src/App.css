@@ -87,6 +87,15 @@
   line-height: 28px;
   font-size: 16px;
 }
+.p__iranSans {
+  font-family: var(--font-fa);
+  color: var(--color-white);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  line-height: 28px;
+  font-size: 16px;
+}
 
 .headtext__cormorant {
   font-family: var(--font-base);
@@ -108,7 +117,8 @@
     line-height: 67px;
   }
 
-  .p__openSans {
+  .p__openSans,
+  .p__iranSans {
     font-size: 30px;
     line-height: 50px;
   }
@@ -156,13 +166,15 @@
     font-size: 21px;
   }
 
-  .p__openSans {
+  .p__openSans,
+  .p__iranSans {
     font-size: 14px;
   }
 }
 
 @media screen and (max-width: 450px) {
-  .p__openSans {
+  .p__openSans,
+  .p__iranSans {
     font-size: 12px;
   }
 

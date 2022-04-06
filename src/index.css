@@ -1,8 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap");
+@font-face {
+  font-family: "IRANSans";
+  src: url("//db.onlinewebfonts.com/t/3967f8bfcdf02e2b966e2f252738ddca.eot");
+  src: url("//db.onlinewebfonts.com/t/3967f8bfcdf02e2b966e2f252738ddca.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/3967f8bfcdf02e2b966e2f252738ddca.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/3967f8bfcdf02e2b966e2f252738ddca.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/3967f8bfcdf02e2b966e2f252738ddca.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/3967f8bfcdf02e2b966e2f252738ddca.svg#IRANSans")
+      format("svg");
+}
 
 :root {
   --font-base: "Bebas Neue", serif;
   --font-alt: "Open Sans", sans-serif;
+  --font-fa: "IRANSans", sans-serif;
 
   --color-golden: #dcca87;
   --color-black: #0c0c0c;
