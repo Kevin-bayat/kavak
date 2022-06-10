@@ -41,7 +41,7 @@ const Slider = () => {
               <p>{item.desc} </p>
               <div>
                 <Link to="/projects">
-                  <Button style={{ backgroundColor: "#fff" }}>More Info</Button>
+                  <Button className="desc__button">More Info</Button>
                 </Link>
               </div>
             </div>

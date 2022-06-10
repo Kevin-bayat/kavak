@@ -1,97 +1,17 @@
 import React, { useState } from "react";
 import "./Navbar.styles.scss";
 import "../Logo/Logo.styles.scss";
-import { useTransition } from "react-spring";
 import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { MdOutlineRestaurantMenu } from "react-icons/md";
 import images from "../../constants/images";
 import CloseIcon from "@mui/icons-material/Close";
 
 const Navbar = ({ isHomePage }) => {
-  console.log({ isHomePage });
-  const [isOpen, setIsOpen] = useState(false);
-  const [pageOffset, setPageOffset] = useState(0);
-  const transition = useTransition(isOpen, {
-    from: { opacity: 0 },
-    enter: { opacity: 1 },
-    leave: { opacity: 0 },
-  });
-
-  const navbarClickHandler = () => {
-    setIsOpen((prevState) => !prevState);
-  };
-
-  const handleScroll = () => {
-    // console.log(window.pageYOffset);
-    setPageOffset(window.pageYOffset);
-    if (window.pageYOffset > 700) {
-      //   if (!color) {
-      //     setColor("red");
-      //   }
-      // } else {
-      //   if (color) {
-      //     setColor("");
-      //   }
-      // }
-    }
-  };
-
-  window.addEventListener("scroll", handleScroll);
   const [toggleMenu, setToggleMenu] = useState(false);
   const toggleMenuHandler = () => {
     setToggleMenu((prevState) => !prevState);
   };
   return (
-    // <div className="navbarContainer section__padding">
-    //   <div>
-    //     <Link to="/">
-    //       <Logo isOpen={isOpen} />
-    //     </Link>
-    //   </div>
-    //   {transition(
-    //     (style, item) =>
-    //       item && (
-    //         <animated.div className="navbar" style={style}>
-    //           <div />
-    //           <div>
-    //             <ul className="nav">
-    //               <li className="nav-items">
-    //                 <Link to="/projects" className={` nav-item`}>
-    //                   projects
-    //                 </Link>
-    //               </li>
-    //               <li className="nav-items">
-    //                 <Link to="/news" className={` nav-item`}>
-    //                   news
-    //                 </Link>
-    //               </li>
-    //               <li className="nav-items">
-    //                 {/*<Link to="/service" className={` nav-item`}>*/}
-    //                 <a href="#service"> service</a>
-    //                 {/*</Link>*/}
-    //               </li>
-    //
-    //               <li className="nav-items">
-    //                 {/*<Link to="/about-us" className={` nav-item`}>*/}
-    //                 <a href="#about-us"> about us</a>
-    //                 {/*</Link>*/}
-    //               </li>
-    //               <li className="nav-items">
-    //                 <Link to="/contact-us" className={` nav-item`}>
-    //                   contacts
-    //                 </Link>
-    //               </li>
-    //             </ul>
-    //           </div>
-    //           <div />
-    //         </animated.div>
-    //       )
-    //   )}
-    //   <div onClick={navbarClickHandler}>
-    //     <BurgerMenu isOpen={isOpen} pageOffset={pageOffset} />
-    //   </div>
-    // </div>
     <div
       className="app__navbar "
       id="top"
@@ -106,10 +26,13 @@ const Navbar = ({ isHomePage }) => {
           <a href="#projects">projects</a>
         </li>
         <li className="p__openSans">
-          <a href="#news">news</a>
+          <a href="#products">products</a>
         </li>
         <li className="p__openSans">
           <a href="#service">service</a>
+        </li>
+        <li className="p__openSans">
+          <a href="#archive">archive</a>
         </li>
         <li className="p__openSans">
           <a href="#about-us">about us</a>
@@ -138,10 +61,13 @@ const Navbar = ({ isHomePage }) => {
                 <a href="#projects">projects</a>
               </li>
               <li className="p__openSans" onClick={toggleMenuHandler}>
-                <a href="#news">news</a>
+                <a href="#products">products</a>
               </li>
               <li className="p__openSans" onClick={toggleMenuHandler}>
                 <a href="#service">service</a>
+              </li>
+              <li className="p__openSans">
+                <a href="#archive">archive</a>
               </li>
               <li className="p__openSans" onClick={toggleMenuHandler}>
                 <a href="#about-us">about us</a>

@@ -26,7 +26,7 @@ const ContactUs = () => {
                 <iframe
                   src="https://maps.google.com/maps?q=35.791755,%2051.476155&t=&z=13&ie=UTF8&iwloc=&output=embed"
                   width="100%"
-                  height="500"
+                  height="650"
                   frameBorder="0"
                   style={{
                     filter: `grayscale(100%) ${loading ? "blur(8px)" : ""}`,

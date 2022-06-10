@@ -1,54 +1,3 @@
-//@import "shared/styles/variables";
-//.navbarContainer{
-//    background-color: transparent;
-//
-//  .navbar {
-//    display: flex;
-//    justify-content: space-between;
-//    align-items: center;
-//    width: 100%;
-//    height: 100px;
-//    position: fixed;
-//    z-index: 2;
-//    //background-color: $palette-white;
-//  }
-//
-//  .cursor {
-//    position: fixed;
-//    width: 20px;
-//    height: 20px;
-//    border-radius: 50%;
-//    background: #ffffff;
-//    pointer-events: none;
-//    mix-blend-mode: difference;
-//  }
-//
-//  .nav {
-//    list-style: none;
-//    display: flex;
-//    text-transform: uppercase;
-//    padding-right: 30px;
-//
-//    &-items {
-//      padding: 0 20px;
-//    }
-//
-//    &-items:hover ~ .cursor {
-//      transform: scale(3);
-//    }
-//
-//    &-item {
-//      color: $palette-gray-13;
-//      &:hover {
-//        color: $palette-gray-6;
-//        cursor: pointer;
-//        transition: 0.6s ease;
-//        transform: scale(10);
-//      }
-//    }
-//  }
-//
-//}
 .app__navbar {
   width: 100%;
   display: flex;
@@ -57,7 +6,6 @@
   padding: 1rem 6rem;
   position: absolute;
   z-index: 2;
-
 }
 .app__navbar-logo {
   display: flex;
@@ -76,6 +24,7 @@
 .app__navbar-links li {
   margin: 0 1rem;
   cursor: pointer;
+  letter-spacing: 4px;
 }
 .app__navbar-links li a:hover {
   color: var(--color-grey);
@@ -118,11 +67,6 @@
 .app__navbar-smallScreen_links li :hover {
   color: var(--color-white);
 }
-//@media screen and (max-width: 2000px) {
-//  .app__navbar-logo img {
-//    width: 230px;
-//  }
-//}
 
 @media screen and (max-width: 1150px) {
   .app__navbar-links {

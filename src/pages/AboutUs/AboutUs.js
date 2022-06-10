@@ -12,7 +12,7 @@ const AboutUs = () => {
   return (
     <div style={{ backgroundColor: "#000" }}>
       <Navbar />
-      <div className="app_aboutUs flex__center section__padding" id="about-us">
+      <div className="app_aboutUs flex__center section__padding">
         <div className="app_aboutUs-image">
           <LazyLoadImage effect="blur" src={images.villa} alt="sketch image" />
         </div>
@@ -23,11 +23,11 @@ const AboutUs = () => {
             kind="studio"
             color="#0c0c0c"
           />
-          <p className="p__openSans" style={{ color: "#0c0c0c" }}>
+          <p className="p__openSans">
             Ad iusto esse eum maiores sunt sed doloremque sunt vel expedita
             molestiae quo laboriosam dolorem sit
           </p>
-          <p className="p__openSans" style={{ color: "#545454" }}>
+          <p className="p__openSans">
             Lorem ipsum dolor sit amet. Est nisi itaque et aperiam debitis non
             numquam fugit ad sunt veritatis cum molestias consequatur et culpa
             ratione. Sed exercitationem molestias aut explicabo alias eum

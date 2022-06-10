@@ -1,13 +1,17 @@
 
 .app__services {
   background-color: var(--color-black);
+
+  .service__button{
+    color: var(--color-white);
+  }
 }
 .app__services-steps {
   width: 100%;
   padding-top: 2rem;
 }
 .app__services-steps_cart {
-  padding: 2rem 1rem 2rem 2rem;
+  padding: 2rem 1rem 2rem 3rem;
   margin-right: 2rem;
   border: 1px solid var(--color-gray);
 }

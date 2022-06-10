@@ -10,6 +10,11 @@
   overflow: hidden;
   color: #fff;
 
+  .footer__button{
+    color: var(--color-white);
+    background: transparent;
+  }
+
   .footer__contact {
     background-color: rgba(32, 32, 32, 0.47);
     color: var(--color-white);

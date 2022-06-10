@@ -24,7 +24,7 @@ const Services = () => {
         ))}
       </div>
       <Link to="/service">
-        <Button className="custom__button">View More</Button>
+        <Button className="service__button">View More</Button>
       </Link>
     </div>
   );

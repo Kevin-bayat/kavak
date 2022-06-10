@@ -19,7 +19,6 @@ const ProjectList = () => {
           <div className="bottomContainer">
             {kavakData?.map((item) =>
               item?.projectList?.map((list) => {
-                console.log({ list });
                 return (
                   item.title === list.title && (
                     <div className="cart" key={item.id}>

@@ -10,14 +10,16 @@ import {
   HeadsetMicOutlined,
 } from "@mui/icons-material";
 import images from "./images";
-import person1 from "../img/persons/person1.jpg";
-import person2 from "../img/persons/person2.jpg";
-import person3 from "../img/persons/person6.jpg";
-import person4 from "../img/persons/person4.jpg";
-import person5 from "../img/persons/person5.jpg";
-import person6 from "../img/persons/person3.jpg";
-import person7 from "../img/persons/person7.jpg";
-import person8 from "../img/persons/person8.jpg";
+import person1 from "../img/personel/0001.jpg";
+import person2 from "../img/personel/0002.jpg";
+import person4 from "../img/personel/0004.jpg";
+import person5 from "../img/personel/0005.jpg";
+import person6 from "../img/personel/0006.jpg";
+import person7 from "../img/personel/0007.jpg";
+import person8 from "../img/personel/0008.jpg";
+import person9 from "../img/personel/0009.jpg";
+import person10 from "../img/personel/0010.jpg";
+import person11 from "../img/personel/0011.jpg";
 
 export const kavakData = [
   {
@@ -163,12 +165,20 @@ export const projectsImage = [
 ];
 
 export const ourTeamImages = [
-  { image: person1, personName: "Asmah Bageri", job: "Design Manager" },
-  { image: person2, personName: "Khashayar Khamesi", job: "Manager" },
-  { image: person3, personName: "Keyvan Bayat", job: "Web Designer" },
-  { image: person4, personName: "Richard Cennedy", job: "Creative Director" },
-  { image: person5, personName: "Donna Flowers", job: "Designer" },
-  { image: person6, personName: "Edwin Charles", job: "Designer" },
-  { image: person7, personName: "John Doe", job: "Designer" },
-  { image: person8, personName: "John Richmond", job: "Designer" },
+  { image: person4, personName: "Khashayar Khamesi", job: "C.E.O" },
+  { image: person10, personName: "Asma Bagheri ", job: "Design Manager" },
+  { image: person5, personName: "Babak Khajeh", job: "Construction Manager" },
+  { image: person9, personName: "Kasra Asgharpour ", job: "Business Manager" },
+  {
+    image: person7,
+    personName: "Yashar Shahmansouri",
+    job: "Construction Manager",
+  },
+  { image: person2, personName: "Ramin Mahzad", job: "Designer" },
+
+  { image: person6, personName: "Amir Feyz", job: "3D Artist" },
+  { image: person8, personName: "Melika Darvish ", job: "Designer" },
+  { image: person11, personName: "Banafshe Azarli", job: "Designer" },
+
+  { image: person1, personName: "Saba Saheli", job: "Interior Designer" },
 ];
