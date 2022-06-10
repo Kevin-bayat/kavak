@@ -4,6 +4,7 @@ import Button from "../Button/Button";
 import { sliderData } from "../../data/SliderData/sliderData";
 import { ArrowLeft, ArrowRight } from "@mui/icons-material";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Wrapper = styled.div`
   display: flex;
@@ -22,7 +23,6 @@ const Slider = () => {
 
   return (
     <section className="slider">
-      {/*<Text />*/}
       <div
         className="arrow"
         style={{ left: "10px" }}
@@ -39,7 +39,11 @@ const Slider = () => {
             <div className="desc">
               <h1 className="title">{item?.title}</h1>
               <p>{item.desc} </p>
-              <Button>More Info </Button>
+              <div>
+                <Link to="/projects">
+                  <Button style={{ backgroundColor: "#fff" }}>More Info</Button>
+                </Link>
+              </div>
             </div>
           </Wrapper>
         ))}

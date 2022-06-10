@@ -5,6 +5,8 @@ import SubHeading from "../../components/SubHeading/SubHeading";
 import Services from "../../components/Services/Services";
 import Footer from "../../components/Footer/Footer";
 import Team from "../../components/Team/Team";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const AboutUs = () => {
   return (
@@ -12,7 +14,7 @@ const AboutUs = () => {
       <Navbar />
       <div className="app_aboutUs flex__center section__padding" id="about-us">
         <div className="app_aboutUs-image">
-          <img src={images.villa} alt="sketch image" />
+          <LazyLoadImage effect="blur" src={images.villa} alt="sketch image" />
         </div>
         <div className="app_aboutUs-content">
           <SubHeading
@@ -51,7 +53,8 @@ const AboutUs = () => {
           </p>
         </div>
         <div className="app_aboutUs-image">
-          <img
+          <LazyLoadImage
+            effect="blur"
             src={images.hafez}
             alt="sketch image"
             style={{ paddingLeft: "2rem" }}

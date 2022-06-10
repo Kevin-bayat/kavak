@@ -1,75 +1,74 @@
 @import "shared/styles/variables";
-.projects{
+.app_projects{
+  background-color: var(--color-white);
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 
-  .top{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 120px;
-
-    .title{
-      font-size: 36px;
-      font-weight: 400;
-      color: $palette-gray-10;
-      margin-bottom: 20px;
-    }
-    .desc{
-      font-size: 18px;
-      color: $palette-gray-8;
-      text-align: center;
-      padding: 0 30px;
-
-    }
+  &-title{
+    color: $palette-gray-5;
+    font-family: var(--font-fa);
+    margin: 20px 0;
   }
-  .bottom{
-    margin-top: 20px;
+  &-desc{
+    color: $color-gray;
+    font-size: 20px;
+  }
+  &-image-container {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
 
-    .bottomContainer{
-      margin: 10px;
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      .cart{
-        width: 25%;
-        text-align: center;
-        margin:30px;
+    .projects__item {
+      width: 33%;
+      text-align: center;
+
+
+      &:hover img {
+        transform: scale(1.1);
+        transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+        object-fit: cover;
+
+        .projectInfo {
+          color: $palette-gray-19;
+        }
+      }
+
+      .img {
+        object-fit: cover;
+        height: 400px;
+        width: 350px;
+        margin-bottom: 10px;
+        padding-right: 1rem;
         cursor: pointer;
+      }
 
-        &:hover img{
-          transform: scale(1.1);
-          transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
-          object-fit: cover;
-
-          .projectInfo{
-            color: $palette-gray-19;
-          }
-        }
-        .img{
-          object-fit: cover;
-          height: 450px;
-          width: 400px;
-          margin-bottom: 10px;
-          padding-right: 1rem;
-        }
-        .projectInfo{
-          .title{
-            color: $palette-gray-13;
-            font-size: 20px;
-            font-weight: 500;
-            padding: 10px 0;
-          }
-          .desc{
-            color: $palette-gray-10;
-            font-size: 14px;
-            margin:0 10px 10px;
-          }
+      .projectInfo {
+        margin-bottom: 30px;
+        .title {
+          color: $color-black;
+          font-size: 26px;
+          font-weight: 500;
+          padding: 10px 0;
+          font-family: var(--font-base);
         }
 
+        .desc {
+          color: $palette-gray-5;
+          font-size: 16px;
+          text-align: left;
+          margin: 0 10px 10px;
+          font-family: var(--font-alt);
+        }
       }
     }
-  }
-}
+
+  }}
+
+
+
+

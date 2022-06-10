@@ -10,7 +10,7 @@ import Service from "./pages/Service/Service";
 import ContactUs from "./pages/ContactUs/ContactUs";
 
 function App() {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {

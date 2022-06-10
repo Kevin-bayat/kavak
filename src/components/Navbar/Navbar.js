@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import "./Navbar.styles.scss";
 import "../Logo/Logo.styles.scss";
-import Logo from "../Logo/Logo";
-// import BurgerMenu from "../BurgerMenu/BurgerMenu";
-import { animated, useTransition } from "react-spring";
+import { useTransition } from "react-spring";
 import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
 import images from "../../constants/images";
-// import Cursor from "../Cursor/Cursor";
+import CloseIcon from "@mui/icons-material/Close";
+
 const Navbar = ({ isHomePage }) => {
   console.log({ isHomePage });
   const [isOpen, setIsOpen] = useState(false);
@@ -123,13 +122,14 @@ const Navbar = ({ isHomePage }) => {
       <div className="app__navbar-smallScreen">
         <GiHamburgerMenu
           color="#fff"
+          style={{ cursor: "pointer" }}
           fontSize={27}
           onClick={toggleMenuHandler}
         />
         {toggleMenu && (
           <div className="app__navbar-smallScreen_overlay flex__center slide-bottom">
-            <MdOutlineRestaurantMenu
-              fontSize={27}
+            <CloseIcon
+              fontSize="large"
               className="overlay__close"
               onClick={toggleMenuHandler}
             />

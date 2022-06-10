@@ -18,8 +18,9 @@ const ProjectList = () => {
         <div className="bottom">
           <div className="bottomContainer">
             {kavakData?.map((item) =>
-              item?.projectList?.map(
-                (list) =>
+              item?.projectList?.map((list) => {
+                console.log({ list });
+                return (
                   item.title === list.title && (
                     <div className="cart" key={item.id}>
                       <Link to={list.link}>
@@ -31,7 +32,8 @@ const ProjectList = () => {
                       </Link>
                     </div>
                   )
-              )
+                );
+              })
             )}
           </div>
         </div>

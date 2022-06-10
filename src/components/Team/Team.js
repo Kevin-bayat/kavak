@@ -1,9 +1,12 @@
-import "./  Team.style.scss";
+import "./Team.style.scss";
 import SubHeading from "../SubHeading/SubHeading";
 
 import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
 import { useRef } from "react";
 import { ourTeamImages } from "../../constants/data";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+
 const Team = () => {
   const scrollRef = useRef(null);
 
@@ -28,8 +31,12 @@ const Team = () => {
         <div className="app__gallery-slider-wrapper" ref={scrollRef}>
           {ourTeamImages.map((image, index) => (
             <div key={index} className="app__team-slider_images">
-              <img src={image.image} alt="personal image" loading="lazy" />
-              <h1 className="image-title p__cormorant">{image.title}</h1>
+              <LazyLoadImage
+                effect="blur"
+                src={image.image}
+                alt={image.personName}
+              />
+              <h1 className="image-title p__cormorant">{image.personName}</h1>
               <p className="image-position p__openSans">{image.job}</p>
             </div>
           ))}

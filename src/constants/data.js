@@ -12,10 +12,10 @@ import {
 import images from "./images";
 import person1 from "../img/persons/person1.jpg";
 import person2 from "../img/persons/person2.jpg";
-import person3 from "../img/persons/person3.jpg";
+import person3 from "../img/persons/person6.jpg";
 import person4 from "../img/persons/person4.jpg";
 import person5 from "../img/persons/person5.jpg";
-import person6 from "../img/persons/person6.jpg";
+import person6 from "../img/persons/person3.jpg";
 import person7 from "../img/persons/person7.jpg";
 import person8 from "../img/persons/person8.jpg";
 
@@ -76,35 +76,35 @@ export const kavakData = [
         title: "Office",
         desc: "Students will be required to submit a reflective report on their literature search with an annotated bibliography to demonstrate their assessment of the quality of the resources they have found",
         renderImage: <img className="img" src={office} alt={""} />,
-        link: "/projects/apartment",
+        link: "/projects/Office",
       },
       {
         id: 23,
         title: "Office",
         desc: "Students will be required to submit a reflective report on their literature search with an annotated bibliography to demonstrate their assessment of the quality of the resources they have found",
         renderImage: <img className="img" src={office} alt={""} />,
-        link: "/projects/apartment",
+        link: "/projects/Office",
       },
       {
         id: 24,
         title: "Office",
         desc: "Students will be required to submit a reflective report on their literature search with an annotated bibliography to demonstrate their assessment of the quality of the resources they have found",
         renderImage: <img className="img" src={office} alt={""} />,
-        link: "/projects/apartment",
+        link: "/projects/Office",
       },
       {
         id: 25,
         title: "Office",
         desc: "Students will be required to submit a reflective report on their literature search with an annotated bibliography to demonstrate their assessment of the quality of the resources they have found",
         renderImage: <img className="img" src={office} alt={""} />,
-        link: "/projects/apartment",
+        link: "/projects/Office",
       },
       {
         id: 26,
         title: "Office",
         desc: "Students will be required to submit a reflective report on their literature search with an annotated bibliography to demonstrate their assessment of the quality of the resources they have found",
         renderImage: <img className="img" src={office} alt={""} />,
-        link: "/projects/apartment",
+        link: "/projects/Office",
       },
     ],
   },
@@ -163,12 +163,12 @@ export const projectsImage = [
 ];
 
 export const ourTeamImages = [
-  { image: person1, title: "Asmah Bageri", job: "Design Manager" },
-  { image: person2, title: "Khashayar Khamesi", job: "Manager" },
-  { image: person3, title: "Keyvan Bayat", job: "Web Designer" },
-  { image: person4, title: "Richard Cennedy", job: "Creative Director" },
-  { image: person5, title: "Donna Flowers", job: "Designer" },
-  { image: person6, title: "Edwin Charles", job: "Designer" },
-  { image: person7, title: "John Doe", job: "Designer" },
-  { image: person8, title: "John Richmond", job: "Designer" },
+  { image: person1, personName: "Asmah Bageri", job: "Design Manager" },
+  { image: person2, personName: "Khashayar Khamesi", job: "Manager" },
+  { image: person3, personName: "Keyvan Bayat", job: "Web Designer" },
+  { image: person4, personName: "Richard Cennedy", job: "Creative Director" },
+  { image: person5, personName: "Donna Flowers", job: "Designer" },
+  { image: person6, personName: "Edwin Charles", job: "Designer" },
+  { image: person7, personName: "John Doe", job: "Designer" },
+  { image: person8, personName: "John Richmond", job: "Designer" },
 ];
