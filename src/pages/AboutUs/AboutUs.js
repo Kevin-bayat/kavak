@@ -1,67 +1,60 @@
 import "./AboutUs.scss";
-import Navbar from "../../components/Navbar/Navbar";
+import Navbar from "../../components/Navbar/MainNavbar/Navbar";
 import images from "../../constants/images";
 import SubHeading from "../../components/SubHeading/SubHeading";
-import Services from "../../components/Services/Services";
 import Footer from "../../components/Footer/Footer";
 import Team from "../../components/Team/Team";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import useTranslate from "../../hooks/useTranslate";
+import i18next from "i18next";
 
 const AboutUs = () => {
+  const { translate, language } = useTranslate();
+
+  console.log({ language }, "page");
+
   return (
     <div style={{ backgroundColor: "#000" }}>
       <Navbar />
       <div className="app_aboutUs flex__center section__padding">
         <div className="app_aboutUs-image">
-          <LazyLoadImage effect="blur" src={images.villa} alt="sketch image" />
+          <LazyLoadImage effect="blur" src={images.sketch} alt="sketch image" />
         </div>
-        <div className="app_aboutUs-content">
+        <div className={`app_aboutUs-content ${i18next.language}`}>
           <SubHeading
-            title="who we are"
-            description="Architecture "
-            kind="studio"
+            title={translate("aboutUs.title")}
+            description={translate("aboutUs.desc")}
+            kind={translate("aboutUs.kind")}
             color="#0c0c0c"
+            spoonColor="black"
           />
-          <p className="p__openSans">
-            Ad iusto esse eum maiores sunt sed doloremque sunt vel expedita
-            molestiae quo laboriosam dolorem sit
-          </p>
-          <p className="p__openSans">
-            Lorem ipsum dolor sit amet. Est nisi itaque et aperiam debitis non
-            numquam fugit ad sunt veritatis cum molestias consequatur et culpa
-            ratione. Sed exercitationem molestias aut explicabo alias eum
-          </p>
+          <p className="p__openSans">{translate("aboutUs1")}</p>
+          <p className="p__openSans">{translate("aboutUs2")}</p>
         </div>
       </div>
       <div className="app_aboutUs flex__center section__padding" id="about-us">
-        <div className="app_aboutUs-content">
+        <div className={`app_aboutUs-content ${i18next.language}`}>
           <SubHeading
-            title="who we are"
-            description="Interior & furniture "
-            kind="designer"
+            title={translate("About.title")}
+            description={translate("About.desc")}
+            kind=""
             color="#0c0c0c"
+            spoonColor="black"
           />
           <p className="p__openSans" style={{ color: "#0c0c0c" }}>
-            Ad iusto esse eum maiores sunt sed doloremque sunt vel expedita
-            molestiae quo laboriosam dolorem sit
-          </p>
-          <p className="p__openSans" style={{ color: "#545454" }}>
-            Lorem ipsum dolor sit amet. Est nisi itaque et aperiam debitis non
-            numquam fugit ad sunt veritatis cum molestias consequatur et culpa
-            ratione. Sed exercitationem molestias aut explicabo alias eum
+            {translate("aboutUs3")}
           </p>
         </div>
         <div className="app_aboutUs-image">
           <LazyLoadImage
             effect="blur"
-            src={images.hafez}
+            src={images.sketch2}
             alt="sketch image"
-            style={{ paddingLeft: "2rem" }}
+            className="lazy-load-image"
           />
         </div>
       </div>
-      <Services />
       <Team />
       <Footer />
     </div>

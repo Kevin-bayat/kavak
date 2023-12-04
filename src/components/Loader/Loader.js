@@ -1,12 +1,12 @@
 import React from "react";
-import "./Loader.scss";
+import classes from "./Loader.scss";
 import Box from "@mui/material/Box";
 import LinearProgress from "@mui/material/LinearProgress";
 import images from "../../constants/images";
 
 const Loader = () => {
   const [progress, setProgress] = React.useState(0);
-
+  const classNames = require("classnames");
   React.useEffect(() => {
     const timer = setInterval(() => {
       setProgress((oldProgress) => {
@@ -22,14 +22,15 @@ const Loader = () => {
       clearInterval(timer);
     };
   }, []);
+  const rootClassName = classNames(classes, "image", {
+    "image-loaded": progress,
+  });
   return (
     <div className="loader">
       <Box className="loader__slider" sx={{ width: "100%" }}>
         <LinearProgress variant="determinate" value={progress} />
       </Box>
-      <div className="loader__logo">
-        <img src={images.logoBlack} alt="kavak logo" />
-      </div>
+      <img src={images.logoBlack} alt="kavak logo" className={rootClassName} />
     </div>
   );
 };

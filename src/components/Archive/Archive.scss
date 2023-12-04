@@ -1,0 +1,94 @@
+@import "shared/styles/variables";
+.archive-container{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  .button-container{
+    margin: 0 auto;
+    .archive-button{
+      color: var(--color-white);
+      background-color: var(--color-black);
+    }
+  }
+
+  .archive{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    img {
+      object-fit: cover;
+      -webkit-filter: grayscale(1); /* Safari 6.0 - 9.0 */
+      filter: grayscale(1);
+      transition: all 0.5s ease;
+      width: 100px;
+      height: 100px;
+    }
+    .lazy-load-image-background{
+      height: 100px;
+      width: 100px;
+    }
+    img:hover {
+      filter: none;
+      object-fit: cover;
+    }
+  }
+
+}
+
+@media screen and (max-width: $sm) {
+  .archive-container {
+    .archive-button {
+      margin: 40px 0;
+    }
+
+    .archive {
+
+      .lazy-load-image-background {
+        height: 80px !important;
+        width: 80px !important;
+      }
+
+      img {
+        height: 80px !important;
+        width: 80px !important;
+      }
+    }
+  }
+
+}
+@media screen and (max-width: $xs) {
+
+    .archive{
+      .lazy-load-image-background{
+        height: 60px !important;
+        width: 60px !important;
+      }
+      img{
+        height: 60px !important;
+        width: 60px !important;
+      }
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+  .archive-container {
+    margin-top: 80px;
+
+    .archive {
+      .lazy-load-image-background {
+        height: 74px !important;
+        width: 74px !important;
+      }
+
+      img {
+        height: 74px !important;
+        width: 74px !important;
+      }
+    }
+  }
+
+}

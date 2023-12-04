@@ -2,19 +2,16 @@ import React from "react";
 import "./Description.scss";
 
 import Image1 from "../../img/projects/villa.jpg";
-import Image2 from "../../img/sliderImage/Coach-House-Architecture-by-INKSPACE-11-of-1.jpg";
+import Image2 from "../../img/slider-images/khane bala villa.png";
 import { Grid } from "@mui/material";
+import useTranslate from "../../hooks/useTranslate";
 
 const Description = () => {
+  const { translate } = useTranslate();
   return (
     <Grid container spacing={2} className="description">
       <Grid item xs={12}>
-        <p className="description__text">
-          Located on the South Coast, we are a chartered practice with the Royal
-          Institute of British Architects (RIBA). We specialise in the design
-          and construction of contemporary and traditional homes, barn
-          conversions, extensions and the renovation of listed buildings.
-        </p>
+        <p className="description__text">{translate("description")}</p>
       </Grid>
       <Grid container className="description__photos">
         <Grid item md={6} sm={12} xs={12} className="description__photos__left">

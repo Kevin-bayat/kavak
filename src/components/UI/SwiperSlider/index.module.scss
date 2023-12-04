@@ -1,0 +1,27 @@
+@import "/shared/styles/variables";
+.Navigation_Section {
+  position: absolute;
+  top: 0;
+  display: flex;
+  z-index: 1;
+  width: 100%;
+  justify-content: space-between;
+  right: 0;
+  padding: 0 10px;
+  height: 100%;
+  align-items: center;
+  .Navigation_Icon {
+    cursor: pointer;
+    font-size: 16px;
+    //color: $palette-primary;
+    &.NextArrow {
+      transform: rotate(180deg);
+    }
+  }
+  .Disabled_Navigation_Icon {
+    .Navigation_Icon {
+      cursor: auto;
+      //color: $palette-gray-3;
+    }
+  }
+}

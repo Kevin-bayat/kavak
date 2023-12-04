@@ -3,19 +3,18 @@ import "./Footer.scss";
 import { Link } from "react-router-dom";
 import Button from "../Button/Button";
 import FooterBottom from "../FooterBottom/FooterBottom";
+import useTranslate from "../../hooks/useTranslate";
 
 const Footer = () => {
+  const { translate } = useTranslate();
   return (
     <div>
       <div className="footer" id="contacts">
         <div className="footer__contact flex__center ">
-          <h1 className="p__openSans">LET`S WORK TOGETHER</h1>
-          <p className="p__openSans">
-            Let us know what you're looking for in agency. we'll take a look and
-            see if this could to be start of something beautiful.
-          </p>
+          <h1>{translate("footer1")}</h1>
+          <p>{translate("footer2")}</p>
           <Link to="/contact-us">
-            <Button className="footer__button">CONTACT US</Button>
+            <Button className="footer__button">{translate("footer3")}</Button>
           </Link>
         </div>
       </div>

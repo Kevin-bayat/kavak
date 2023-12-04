@@ -1,60 +1,62 @@
-.app_contactUs{
+@import "shared/styles/variables";
+.app_contactUs-map {
+  flex: 1;
+  position: relative;
+  .circular {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    width: 100%;
+  }
+}
 
 
-
-  .app_contactUs-container{
+.app_contactUs {
+  .app_contactUs-container {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     width: 100%;
-    height: 100vh;
 
-    .app_contactUs-map{
-      flex:1;
-      margin-top: 4rem ;
-      position: relative;
-      .circular{
-        position: absolute;
-        top: 45%;
-        left: 45%;
-        width: 100%;
-      }
+    .fa{
+      align-items: end !important;
+      text-align: right !important;
+
     }
-    .app_contactUs-info{
+    .app_contactUs-info {
       flex: 1;
       display: flex;
-     margin-top: 60px;
+      margin-top: 2rem;
       align-items: flex-start;
       justify-content: flex-start;
       flex-direction: column;
 
-      .app_contactUs-info_title{
+      .app_contactUs-info_title {
         text-transform: capitalize;
         color: var(--color-black);
         letter-spacing: 0.1em;
         font-size: 2rem;
-        margin-top: 3rem;
+        margin: 3rem 0;
       }
 
-      .app_contactUs-info_desc{
+      .app_contactUs-info_desc {
         color: var(--color-gray);
         padding: 2rem 0 3rem;
         font-weight: 500;
       }
     }
-    .contact__info{
+    .contact__info {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
 
-      .contact__info-phone{
+      .contact__info-phone {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
       }
-
 
       & > div {
         width: 100%;
@@ -63,22 +65,29 @@
         align-items: flex-start;
         padding-top: 1rem;
 
-        span{
+        span {
           font-weight: bold;
-          font-family: var(--font-alt);
+          //font-family: var(--font-alt);
           width: 70px;
         }
-
-
       }
-        p{
-          color: var(--color-gray);
-          font-size: 14px;
-          padding-left: 1rem;
-          line-height:1.7;
-        }
-
+      p {
+        color: var(--color-gray);
+        font-size: 14px;
+        padding-left: 1rem;
+        line-height: 1.7;
+      }
     }
   }
 }
 
+@media screen and (min-width: $xs) {
+}
+@media screen and (max-width: $sm) {
+  .app_contactUs-map {
+    flex: 2;
+  }
+}
+
+@media screen and (max-width: $xs) {
+}

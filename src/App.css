@@ -5,6 +5,13 @@
   padding: 5rem 6rem;
 }
 
+.fa {
+  font-family: var(--font-fa) !important;
+}
+.en {
+  font-family: var(--font-alt) !important;
+}
+
 .flex__center {
   display: flex;
   justify-content: center;
@@ -51,10 +58,15 @@
   width: 80%;
 }
 
+.iconImage {
+  width: 40px;
+  height: 40px;
+}
+
 .custom__button {
   background-color: transparent;
   width: max-content;
-  font-family: var(--font-alt);
+  /*font-family: var(--font-alt);*/
   border: 1px solid var(--color-grey);
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -64,10 +76,11 @@
   border-radius: 1px;
   outline: none;
   cursor: pointer;
+  color: var(--color-black);
 }
 
 .p__cormorant {
-  font-family: var(--font-base);
+  /*font-family: var(--font-base);*/
   color: var(--color-white);
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -76,9 +89,20 @@
   line-height: 29.9px;
   font-size: 23px;
 }
-
+.spoon_white,
+.spoon_black {
+  width: 20px;
+  margin-right: 5px;
+  border: 1px solid;
+}
+.spoon_black {
+  border-color: var(--color-black);
+}
+.spoon_white {
+  border-color: var(--color-white);
+}
 .p__openSans {
-  font-family: var(--font-alt);
+  /*font-family: var(--font-alt);*/
   color: var(--color-white);
   font-weight: 400;
   letter-spacing: 0.04em;
@@ -87,7 +111,7 @@
   font-size: 16px;
 }
 .p__iranSans {
-  font-family: var(--font-fa);
+  /*font-family: var(--font-fa);*/
   color: var(--color-white);
   font-weight: 400;
   letter-spacing: 0.04em;
@@ -97,16 +121,12 @@
 }
 
 .headtext__cormorant {
-  font-family: var(--font-base);
+  /*font-family: var(--font-base);*/
   color: var(--color-golden);
   font-size: 64px;
   line-height: 83.2px;
   letter-spacing: 0.04em;
   text-transform: capitalize;
-}
-
-.spoon__img {
-  width: 45px;
 }
 
 @media screen and (min-width: 2000px) {
@@ -125,10 +145,6 @@
   .headtext__cormorant {
     font-size: 150px;
     line-height: 210px;
-  }
-
-  .spoon__img {
-    width: 80px;
   }
 }
 

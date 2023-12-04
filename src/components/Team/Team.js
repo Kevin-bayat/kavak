@@ -1,14 +1,16 @@
 import "./Team.style.scss";
 import SubHeading from "../SubHeading/SubHeading";
-
 import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
 import { useRef } from "react";
 import { ourTeamImages } from "../../constants/data";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import useTranslate from "../../hooks/useTranslate";
+import i18next from "i18next";
 
 const Team = () => {
   const scrollRef = useRef(null);
+
+  const { translate } = useTranslate();
 
   const scrollHandler = (direction) => {
     const { current } = scrollRef;
@@ -22,22 +24,23 @@ const Team = () => {
   return (
     <div className="app__team flex__center section__padding">
       <SubHeading
-        title="our team"
+        title={translate("title.team")}
         color="#0c0c0c"
-        description="we are building"
-        kind="experts"
+        description={translate("desc.team")}
+        kind={translate("kind.team")}
+        spoonColor={"black"}
       />
       <div className="app__team-slider">
         <div className="app__gallery-slider-wrapper" ref={scrollRef}>
           {ourTeamImages.map((image, index) => (
             <div key={index} className="app__team-slider_images">
-              <LazyLoadImage
-                effect="blur"
-                src={image.image}
-                alt={image.personName}
-              />
-              <h1 className="image-title p__cormorant">{image.personName}</h1>
-              <p className="image-position p__openSans">{image.job}</p>
+              <img src={image.image} alt={image.personName} />
+              <h1 className={`image-title p__cormorant ${i18next.language}`}>
+                {translate(image.personName)}
+              </h1>
+              <p className="image-position p__openSans">
+                {translate(image.job)}
+              </p>
             </div>
           ))}
         </div>

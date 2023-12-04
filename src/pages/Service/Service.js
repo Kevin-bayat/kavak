@@ -1,16 +1,19 @@
 import "./Service.scss";
-import Navbar from "../../components/Navbar/Navbar";
-import Services from "../../components/Services/Services";
+import Navbar from "../../components/Navbar/MainNavbar/Navbar";
 import React from "react";
-import FooterBottom from "../../components/FooterBottom/FooterBottom";
+
+import MyAccordion from "../../components/UI/Accordion/MyAccordion";
+import Footer from "../../components/Footer/Footer";
 
 const Service = () => {
   return (
-    <div className="app__service">
+    <>
       <Navbar />
-      <Services />
-      <FooterBottom />
-    </div>
+      <div className="app__service">
+        <MyAccordion />
+      </div>
+      <Footer />
+    </>
   );
 };
 

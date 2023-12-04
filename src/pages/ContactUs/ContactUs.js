@@ -1,12 +1,16 @@
 import "./ContactUs.style.scss";
 import { Paper } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import Navbar from "../../components/Navbar/Navbar";
+import Navbar from "../../components/Navbar/MainNavbar/Navbar";
 import FooterBottom from "../../components/FooterBottom/FooterBottom";
 import CircularProgressForLoading from "../../components/UI/CircularProgress/CircularProgressForLoading";
+import useTranslate from "../../hooks/useTranslate";
+import i18next from "i18next";
 
 const ContactUs = () => {
   const [loading, setLoading] = useState(true);
+
+  const { translate } = useTranslate();
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -15,63 +19,71 @@ const ContactUs = () => {
 
     return () => clearTimeout(timer);
   }, []);
+  const style = {
+    order: i18next.language === "fa" ? 2 : 1,
+  };
   return (
     <>
       <div className="app_contactUs">
         <Navbar />
         <div className="app_contactUs-container">
-          <div className="app_contactUs-map">
-            <Paper>
-              <div id="map">
-                <iframe
-                  src="https://maps.google.com/maps?q=35.791755,%2051.476155&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                  width="100%"
-                  height="650"
-                  frameBorder="0"
-                  style={{
-                    filter: `grayscale(100%) ${loading ? "blur(8px)" : ""}`,
-                  }}
-                />
-                <div className="circular">
-                  <CircularProgressForLoading loading={loading} />
-                </div>
-              </div>
-            </Paper>
-          </div>
-
-          <div className="app_contactUs-info section__padding">
+          <div className={`app_contactUs-info section__padding `}>
             <h1 className="app_contactUs-info_title p__cormorant">
-              contact info
+              {translate("contact.header")}
             </h1>
-            <p className="app_contactUs-info_desc p__openSans">
-              Let us know what you're looking for in agency. we'll take a look
-              and see if this could to be start of something beautiful.
-            </p>
             <div className="contact__info">
               <div>
-                <span>Address:</span>
-                <p className="p__openSans">
-                  Tehran - Nobonyad Sq. - sixth kuhestan Avenue - no. 13 - unit
-                  7
+                <span style={style}>{translate("contact.addr")}</span>
+                <p style={style} className="p__openSans">
+                  {translate("contact.address")}
                 </p>
               </div>
               <div>
-                <span>Phone:</span>
-                <div className="contact__info-phone">
-                  <p className="p__openSans">(+98) 21 2229 2616</p>
-                  <p className="p__openSans">(+98) 21 2282 2007 - 8</p>
+                <span style={style}>{translate("contact.phone")}</span>
+                <div style={style} className="contact__info-phone">
+                  <p className="p__openSans">
+                    {translate("contact.phoneNum1")}
+                  </p>
+                  <p className="p__openSans">
+                    {translate("contact.phoneNum2")}
+                  </p>
                 </div>
               </div>
               <div>
-                <span>Fax:</span>
-                <p className="p__openSans">(+98) 21 2229 2616</p>
+                <span style={style}>{translate("contact.fax")}</span>
+                <p style={style} className="p__openSans">
+                  {translate("contact.faxNum")}
+                </p>
               </div>
               <div>
-                <span>Email:</span>
-                <p></p>
+                <span style={style}>{translate("contact.email")}</span>
+                <p
+                  className="p__openSans"
+                  style={{ textTransform: "none", ...style }}
+                >
+                  {translate("contact.emailAddr")}
+                </p>
               </div>
             </div>
           </div>
+        </div>
+        <div className="app_contactUs-map">
+          <Paper>
+            <div id="map">
+              <iframe
+                src="https://maps.google.com/maps?q=35.791755,%2051.476155&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="300px"
+                frameBorder="0"
+                style={{
+                  filter: `grayscale(100%) ${loading ? "blur(8px)" : ""}`,
+                }}
+              />
+              <div className="circular">
+                <CircularProgressForLoading loading={loading} />
+              </div>
+            </div>
+          </Paper>
         </div>
       </div>
       <FooterBottom />

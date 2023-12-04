@@ -1,8 +1,11 @@
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import "./Text.styles.scss";
+import useTranslate from "../../hooks/useTranslate";
 
 const Text = () => {
   const [color, setColor] = useState("");
+
+  const { translate } = useTranslate();
 
   const handleScroll = () => {
     if (window.pageYOffset > 413) {
@@ -21,10 +24,10 @@ const Text = () => {
   return (
     <div className="text" style={{ color: color }}>
       <div className="text--left">
-        <h3>Architecture</h3>
+        <h3>{translate("text.arch")}</h3>
       </div>
       <div className="text--right">
-        <h3>Interior Design</h3>
+        <h3>{translate("text.interior")}</h3>
       </div>
     </div>
   );

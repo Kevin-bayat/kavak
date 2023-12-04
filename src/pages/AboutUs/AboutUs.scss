@@ -1,0 +1,12 @@
+.lazy-load-image {
+  margin-left: 2rem;
+}
+
+.fa{
+  text-align: right !important;
+}
+@media screen and (max-width: 950px) {
+  .lazy-load-image {
+    margin-left: 0;
+  }
+}

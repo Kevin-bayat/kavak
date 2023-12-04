@@ -4,59 +4,58 @@ import React from "react";
 
 import "./FooterBottom.style.scss";
 import { Google, Pinterest } from "@mui/icons-material";
+import useTranslate from "../../hooks/useTranslate";
 
 const FooterBottom = () => {
+  const { translate } = useTranslate();
   return (
-    <div className="footer__bottom">
-      <div className="left">
-        <p className="p__openSans">
-          &copy; 2022. Designed by
-          <a
-            href="https://www.linkedin.com/in/keyvan-bayat-4a37231b2/"
-            target="_blank"
-            style={{ color: "#dcca87", paddingLeft: "4px" }}
-          >
-            Keyvan-Bayat
-          </a>
-        </p>
-      </div>
+    <>
       <div className="center p__openSans">
-        <a href="#top">GO TO TOP</a>
+        <a href="#top">{translate("footer.btn")}</a>
       </div>
-      <div className="right">
-        <div className="social">
-          <div className="social__icon">
+      <div className="footer__bottom">
+        <div className="left">
+          <p className="p__openSans">
+            <p>&copy; 2022. Designed by</p>
             <a
-              href="https://www.pinterest.com/kavak_architects"
+              href="https://www.instagram.com/keivan.bayat/"
               target="_blank"
+              style={{ color: "#dcca87", paddingLeft: "4px" }}
             >
-              <Pinterest className="pinterest" />
+              Keyvan-Bayat
             </a>
-          </div>
-          <div className="social__icon">
-            <a href="https://www.instagram.com/kavakbana" target="_blank">
-              <InstagramIcon className="instagram" />
-            </a>
-          </div>
-          <div className="social__icon">
-            <a
-              href="https://www.linkedin.com/in/kavak-architects-aa2988220/"
-              target="_blank"
-            >
-              <LinkedInIcon className="linkedin" />
-            </a>
-          </div>
-          <div className="social__icon">
-            <a
-              href="mailto:kavak.d.g?subject=SendMail&body=Description"
-              target="_blank"
-            >
-              <Google className="email" />
-            </a>
+          </p>
+        </div>
+        <div className="right">
+          <div className="social">
+            <div className="social__icon">
+              <a
+                href="https://www.pinterest.com/kavak_architects"
+                target="_blank"
+              >
+                <Pinterest className="pinterest" />
+              </a>
+            </div>
+            <div className="social__icon">
+              <a
+                href="https://www.instagram.com/kavakarchitects"
+                target="_blank"
+              >
+                <InstagramIcon className="instagram" />
+              </a>
+            </div>
+            <div className="social__icon">
+              <a
+                href="https://www.linkedin.com/in/kavak-architects-aa2988220/"
+                target="_blank"
+              >
+                <LinkedInIcon className="linkedin" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 export default FooterBottom;

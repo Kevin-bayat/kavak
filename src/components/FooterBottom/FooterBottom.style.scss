@@ -1,3 +1,19 @@
+@import "shared/styles/variables";
+.center {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-black);
+  color: var(--color-grey);
+  padding-top: 1rem;
+
+  & a:hover {
+    color: var(--color-golden);
+  }
+}
+
 .footer__bottom {
   background-color: var(--color-black);
   color: var(--color-grey);
@@ -8,17 +24,6 @@
   width: 100%;
   padding: 0 2rem;
 
-  .center {
-    flex: 1;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    & a:hover {
-      color: var(--color-golden);
-    }
-  }
   .left {
     flex: 1;
     text-align: center;
@@ -27,7 +32,6 @@
     align-items: center;
 
     & p {
-      font-size: 14px;
       color: var(--color-grey);
     }
   }
@@ -60,8 +64,6 @@
     .social {
       display: flex;
       &__icon {
-        padding: 0 10px;
-
         > a {
           color: white;
           cursor: pointer;
@@ -80,6 +82,31 @@
           }
         }
       }
+    }
+  }
+}
+@media screen and (min-width: $xs) {
+  .left p {
+    font-size: 14px;
+    display: flex;
+  }
+  .social {
+    &__icon {
+      padding: 0 10px;
+    }
+  }
+}
+@media screen and (max-width: $sm) {
+}
+
+@media screen and (max-width: $xs) {
+  .left p {
+    font-size: 12px;
+    flex-direction: column;
+  }
+  .social {
+    &__icon {
+      padding: 0 5px;
     }
   }
 }

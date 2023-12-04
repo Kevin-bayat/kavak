@@ -1,5 +1,6 @@
 @import "shared/styles/variables";
-.app_subHeading{
+
+.app_subHeading {
   width: 100%;
   text-transform: uppercase;
   display: flex;
@@ -7,32 +8,45 @@
   align-items: flex-start;
   flex-direction: column;
 }
-.app_subHeading-title{
+
+.app_subHeading-title {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1rem 0;
+  padding: 3rem 0;
 }
-
-.app_subHeading-title h4{
+.fa{
+  text-align: right !important;
+  align-items: end !important;
+   h1{
+     letter-spacing: 0 !important;
+   }
+}
+.app_subHeading-title h4 {
   font-size: 14px;
   color: var(--color-grey);
   font-weight: 400;
-
 }
 
-.app_subHeading-description{
+.app_subHeading-description {
   width: 100%;
   color: var(--color-white);
   flex-wrap: wrap;
 
-
-
-  h1{
-    font-size:36px;
+  h1 {
+    font-size: 36px;
     font-weight: bold;
-    font-family: var(--font-base);
+    //font-family: var(--font-base);
     letter-spacing: 0.09em;
+  }
+}
+@media screen and (max-width: $xs) {
+  .app_subHeading-title h4 {
+    font-size: 12px;
+  }
+  .app_subHeading-description {
+    h1 {
+      font-size: 24px;
+    }
   }
 }
